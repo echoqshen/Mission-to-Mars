@@ -1,0 +1,16 @@
+> db
+SEAN
+> db.movie.insert({"name":"tutorials point"})
+WriteResult({ "nInserted" : 1 })
+> db.movie.find()
+{ "_id" : ObjectId("61aceffbf0ad3960f0665a3b"), "name" : "tutorials point" }
+> db.names.insert({"sean":"seano", "echo" : "chook"})
+WriteResult({ "nInserted" : 1 })
+> db.name.find() 
+> db.names.find()
+{ "_id" : ObjectId("61acf087f0ad3960f0665a3c"), "sean" : "seano", "echo" : "chook" }
+> db.find()
+uncaught exception: TypeError: db.find is not a function :
+@(shell):1:1
+> db.getCollectionNames()
+[ "movie", "names" ]
